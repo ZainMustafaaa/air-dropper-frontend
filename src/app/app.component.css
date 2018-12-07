@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+tbody {
+    height: 400px;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+
+.margin-bottom-50{
+    margin-bottom: 50px;
+}
+
+.table-container {
+    height: 10em;
+}
+
+table {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+
+table thead {
+    /* head takes the height it requires, 
+    and it's not scaled when table is resized */
+    flex: 0 0 auto;
+    width: calc(100% - 0.9em);
+}
+
+table tbody {
+    /* body takes all the remaining available space */
+    flex: 1 1 auto;
+    display: block;
+    overflow-y: scroll;
+}
+
+table tbody tr {
+    width: 100%;
+}
+
+table thead, table tbody tr {
+    display: table;
+    table-layout: auto;
+}
+
+.table-width{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.table > thead:nth-child(1) > tr:nth-child(1) > th:nth-child(3){
+    text-align: right
+}
+
+.box-shadow{
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.45);
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-horizontal .control-label {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.well{
+    padding: 20px 55px;
+}
+
+.btn-p{
+    margin-left: 81px;
+    background-color: darkslategrey;
+    color: white;
+}
+
+.startLimit{
+    margin-right: 25px;
+}
+
+.center-box-color {
+    background-color: white;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3418db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.btn-color {
+    background-color: darkslategray;
+    color: white;
+}
