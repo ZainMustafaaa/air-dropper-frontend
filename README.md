@@ -1,4 +1,4 @@
-# Air Drop Front End Application
+# Air Drop Frontend Application
 Client application for tokens airdrop.
 ## Development
     node version 10.0.0
